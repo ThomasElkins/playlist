@@ -25,6 +25,36 @@ $('#clearTracksButton').append('<div id="chooseTracksButtonText"><h3>clear track
 $('#playlistButtonContainer').append('<div id="submitBinButton">')
 $('#submitBinButton').append('<div id="submitBinButtonText"><h3>submit bin</h3></div>').css("color", "white",)
 
+// Get request on homepage
+
+$.get("https://lit-fortress-6467.herokuapp.com/object", function(data){
+  var albumArr = data["results"];
+  var splashArt = [];
+    for (var i = 0; i < albumArr.length; i++){
+      splashArt.push(albumArr[i]["cover_art"])
+    }
+    // Shuffle order of album array
+    function shuffleArray(array) {
+      for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
+}
+var shuffledArt = shuffleArray(splashArt);
+var splashArtOne = shuffledArt[0];
+var splashArtTwo = shuffledArt[1];
+var splashArtThree = shuffledArt[2];
+console.log(splashArtOne)
+$('.transparentImgContainer').append('<img id="splashOne" src="images/'+splashArtOne+'"/>')
+$('.transparentImgContainer').append('<img id="splashTwo" src="images/'+splashArtTwo+'"/>')
+$('.transparentImgContainer').append('<img id="splashThree" src="images/'+splashArtThree+'"/>')
+
+//End get request
+})
+
 
 
 //End load function

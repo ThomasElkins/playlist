@@ -39,6 +39,28 @@ z-index: -1;
   width: inherit;
   height: inherit;
   opacity: .19;
+  z-index: -1;
+}
+#splashOne {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  right: 17%;
+  top: 10%;
+}
+#splashTwo {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  right: 17%;
+  top: 40%;
+}
+#splashThree {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  right: 17%;
+  top: 72%
 }
 /*container for middle left*/
 .splashLeft {
