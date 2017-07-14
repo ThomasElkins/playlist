@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'myFont';
+  src: url('myFont.eot');
+  src: url("fonts/AvenirNextLTPro-Regular.otf") format:("opentype");
+}
+/*full main page*/
+#splashContainer {
+height: 100vh;
+width: 100vw;
+background-color: rgb(238,238,238);
+z-index: -1;
+}
+
+.topNav {
+  background-color: rgb(155,155,141);
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid;
+  border-color: black;
+}
+
+.bottomNav {
+  background-color: rgb(104,104,90);
+  width: 100%;
+  height: 50px;
+  border-top: 2px solid;
+  border-color: black;
+  position: fixed;
+  bottom: 0;
+}
+/*container for railroad img*/
+.transparentImgContainer {
+  height: 100vh;
+  width: 50vw;
+  float: right;
+}
+
+#railroadImg {
+  width: inherit;
+  height: inherit;
+  opacity: .19;
+}
+/*container for middle left*/
+.splashLeft {
+  height: 100vh;
+  width: 50vw;
+  float: left;
+}
+
+#splashText {
+  color: rgb(70,26,95);
+  margin-top: 25vh;
+  font-family: 'myFont';
+}
+#chooseTracksButton {
+  width: 12vw;
+  height: 50px;
+  background-color: rgb(53,53,40);
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+#chooseTracksButtonText {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*Top Nav Bar Playlist Page*/
+
+#playlistNav {
+  background-color: rgb(155,155,141);
+  width: 100%;
+  height: 125px;
+}
+
+#playlistContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(255,255,255);
+  z-index: -1;
+}
+
+#playlistNavText {
+  color: rgb(239,239,236);
+  position: relative;
+  padding-top: 70px;
+  padding-left: 75px;
+}
+
+#albumNavBar {
+  background-color: rgb(255,255,255);
+  width: 100%;
+  height: 125px;
+}
+
+#albumBox {
+  width: 90%;
+  height:210px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(238,238,238);
+  border: 2px solid;
+  border-color: black;
+}
+#playlistButtonContainer{
+  width: 90%;
+  height:100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#clearTracksButton {
+  display: inline-block;
+  position: relative;
+  width: 20vw;
+  height: 40px;
+  background-color: rgb(53,53,40);
+  border-radius: 5px;
+  margin-top: 10px;
+
+}
+#clearTracksButtonText {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#submitBinButton {
+  display: inline-block;
+  position: relative;
+  width: 20vw;
+  height: 40px;
+  background-color: rgb(53,53,40);
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 15px;
+
+}
+#submitBinButtonText {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
