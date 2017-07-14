@@ -74,11 +74,12 @@ $.get("https://lit-fortress-6467.herokuapp.com/object", function(e){
       $('#albumNavBar').append('<div id="'+albumID+'" class="artWrapper"</div>')
       $('#'+albumID+'').append('<img src="images/'+art+'" class="albums"/>')
     }
-// Add album to list on click
-  $('.artWrapper').click(function(){
-    var clickedOn = this.id
-    console.log(e["results"])
-  })
+// // Add album to list on click
+//   $('.artWrapper').click(function(){
+//     var clickedOn = this.id
+//     console.log(e["results"])
+//   })
+  //End get request
 })
 
 
